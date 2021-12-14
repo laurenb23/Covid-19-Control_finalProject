@@ -1,0 +1,465 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #d7baad;
+}
+
+#navBar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    background-color: #10217d;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+}
+
+li a {
+    display: block;
+    color: antiquewhite;
+    padding: 7px 20px;
+    margin-top: 10px;
+}
+
+li a.active {
+    background-color: purple;
+    color: aliceblue;
+}
+
+li a:hover:not(.active) {
+    background-color: black;
+    color: rgb(239, 243, 234);
+}
+
+h1 {
+    color: #F9F9F9;
+    background-color: #10217d;
+    margin-left: 35%;
+    text-align: center;
+    width: 40%;
+    font-size: 50px;
+}
+
+h2 {
+    color: #16c2d5;
+    margin-left: 18%;
+    font-size: 28px;
+}
+
+video {
+    margin-left: 25%;
+}
+
+.name-question {
+    font-size: 40px;
+    line-height: 20px;
+    margin-left: 40%;
+    margin-top: 180px;
+}
+
+#theirName {
+    margin-left: 42%;
+    font-size: 30px;
+    font-style: oblique;
+    position: absolute;
+    clear: both;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 300px;
+    padding-bottom: 100px;
+}
+
+
+/* CSS for trending page */
+
+#ageVaxContainer {
+    margin-left: 60%;
+    width: 500px;
+    height: 400px;
+    background-color: #2e4450;
+    clear: both;
+    color: #F9F9F9;
+}
+
+#stateVaxContainer {
+    margin-left: 60%;
+    width: 500px;
+    height: 400px;
+    background-color: #2e4450;
+    clear: both;
+    color: #F9F9F9;
+}
+
+#t_summary {
+    color: #F9F9F9;
+    margin-left: 18%;
+    font-size: 18px;
+}
+
+.trendingData {
+    background-color: #527c88;
+    margin-top: -800px;
+    padding: 15px;
+    margin-left: 18%;
+    width: 525px;
+    font-size: 20px;
+    color: #F9F9F9;
+}
+
+.statsOverview {
+    background-color: #527c88;
+    padding: 15px;
+    margin-left: 18%;
+    width: 525px;
+    font-size: 20px;
+    color: #F9F9F9;
+    margin-top: 50px;
+}
+
+
+/*CSS for Index Q's */
+
+.questionAndAnswer-container {
+    margin-left: 2%;
+    justify-content: left;
+    flex-direction: column;
+    background-color: #527c88;
+}
+
+.q1,
+.q2,
+.q3,
+.q4 {
+    cursor: pointer;
+    padding: 30px 20px;
+    width: 60%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+    color: #F9F9F9;
+}
+
+.faqOneAns,
+.faqTwoAns,
+.faqThreeAns,
+.faqFourAns {
+    margin: auto;
+    width: 50%;
+    padding: auto;
+}
+
+.active,
+.q1:hover {
+    background-color: #2e4450;
+}
+
+.active,
+.q2:hover {
+    background-color: #2e4450;
+}
+
+.active,
+.q3:hover {
+    background-color: #2e4450;
+}
+
+.active,
+.q4:hover {
+    background-color: #2e4450;
+}
+
+.faqOneAns,
+.faqTwoAns,
+.faqThreeAns,
+.faqFourAns {
+    padding: 0 18px;
+    color: #F9F9F9;
+    background-color: #10217d;
+    display: none;
+    overflow: hidden;
+}
+
+.q1:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #F9F9F9;
+    float: right;
+    margin-left: 5px;
+}
+
+*/ .active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+    color: #F9F9F9;
+}
+
+.q2:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #F9F9F9;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";
+    color: #F9F9F9;
+}
+
+.q3:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #F9F9F9;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";
+    color: #F9F9F9;
+}
+
+.q4:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #F9F9F9;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";
+    color: #F9F9F9;
+}
+
+
+/* CSS for News Page */
+
+.news-grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 250px 250px;
+    background-color: #527c88;
+    padding: 25px;
+    grid-column-gap: 50px;
+    grid-row-gap: 25px;
+    margin-left: 20%;
+}
+
+.article-one {
+    background-color: #89dee2;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    color: #F9F9F9;
+}
+
+.article-two {
+    background-color: #89dee2;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    color: #F9F9F9;
+}
+
+.article-three {
+    background-color: #89dee2;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    color: #F9F9F9;
+    ;
+}
+
+.article-four {
+    background-color: #89dee2;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    color: #F9F9F9;
+}
+
+.items .item {
+    background: #f3f3f3;
+    padding: 20px;
+    border-radius: 10px;
+    border: solid 1px #aaa;
+    display: inline-block;
+    width: 31%;
+    margin: 1%;
+}
+
+.items .item .item-title {
+    font-size: 20pt;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+.items .item .item-image {
+    width: 100%;
+}
+
+#news_Description {
+    color: #F9F9F9;
+    margin-left: 20%;
+    font-size: 20px;
+}
+
+
+/* Resources Page */
+
+.vaccinationMap {
+    margin-left: 30%;
+    margin-top: -320px;
+}
+
+#vLocation {
+    color: #F9F9F9;
+    text-align: left;
+    font-size: 20px;
+}
+
+.mh_Resources {
+    margin-left: 65%;
+}
+
+#mentalHealth {
+    color: #F9F9F9;
+    text-align: left;
+    font-size: 20px;
+}
+
+.travel {
+    margin-left: 30%;
+}
+
+#travelRestrictions {
+    color: #F9F9F9;
+    text-align: left;
+    font-size: 20px;
+}
+
+.food_assistance {
+    margin-left: 69%;
+    margin-top: -320px;
+}
+
+#USDA {
+    color: #F9F9F9;
+    text-align: left;
+    font-size: 20px;
+}
+
+.housing_help {
+    margin-left: 30%;
+    margin-top: 60px;
+}
+
+#rental {
+    color: #F9F9F9;
+    text-align: left;
+    font-size: 20px;
+}
+
+.unemploymentHelp {
+    margin-left: 69%;
+    margin-top: -300px;
+}
+
+#job_aid {
+    color: #F9F9F9;
+    text-align: left;
+    font-size: 20px;
+}
+
+
+/* Health Survey */
+
+#h_survey {
+    margin-left: 82%;
+    background-color: #10217d;
+    color: #f9f9f9;
+    font-size: 18px;
+    display: inline-block;
+    padding: 15px;
+    text-align: center;
+    margin-top: -950px;
+    /* float: right; */
+    position: absolute;
+    clear: both;
+}
+
+#c19_selfcheck {
+    color: #f9f9f9;
+    background-color: #2e4450;
+    line-height: 25px;
+    padding-top: 15px;
+}
+
+#survey_title {
+    color: white;
+    text-align: left;
+    margin-left: 22px;
+    width: 30%;
+    height: 45px;
+    padding-top: 15px;
+    text-indent: 5px;
+}
+
+#back_button {
+    color: #000;
+    font-weight: bold;
+    background-color: #d7baad;
+    font-size: 18px;
+    font-style: italic;
+    float: right;
+    padding-top: 15px;
+    border-style: double;
+    margin-top: -1575px;
+    margin-right: 20px;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+}
+
+
+/* About section */
+
+#portrait {
+    margin-left: 570px;
+}
+
+#auth_title {
+    background-color: #927c73;
+    color: #f6f6f6;
+    font-style: italic;
+    font-weight: bold;
+    width: 18%;
+}
+
+#about {
+    margin-left: 20%;
+    background-color: #927c73;
+    padding: 15px;
+    color: #f6f6f6;
+}
+
+#org_email_form {
+    background-color: #927c73;
+    color: #f6f6f6;
+    font-style: italic;
+    font-weight: bold;
+    width: 11%;
+}
+
+#email {
+    margin-left: 250px;
+}

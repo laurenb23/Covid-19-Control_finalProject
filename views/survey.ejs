@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Home page">
+    <meta name="author" content="Lauren Broski">
+    <title> Covid-19 Control </title>
+    <script src="https://kit.fontawesome.com/c807ac2220.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="/public/Media/images/virus.png" type="img/png" />
+    <link rel="stylesheet" href="/public/CSS/stylesheet.css">
+    <script type="text/javascript" src="/public/JS/functions.js"></script>
+
+</head>
+
+<body>
+
+    <form id="c19_selfcheck">
+
+        <h1 id="survey_title">Covid-19 Survey </h1>
+        <p> IMPORTANT NOTE: This survey does not replace taking an actual Covid-19 test. </p>
+
+        <div class="location">
+            <label>
+                1. Are you currently in the continental United States or a U.S. territory right now? <br>
+            </label>
+            <label for="affirmative">
+                <input type="radio"
+                       id="affirm"
+                       name="yChoice">Yes</input>
+            </label>
+            <label for="negative">
+                <input type="radio"
+                       id="negate"
+                       name="nChoice">No</input>
+        </div>
+        <br>
+
+        <div class="who">
+            <label>
+                2. Are you answering for yourself or someone else? <br>
+            </label>
+
+            <label for="first_person">
+                <input type="radio"
+                       id="myself"
+                       name="me">Myself</input>
+            </label>
+            <label for="third_person">
+                <input type="radio"
+                       id="someoneElse"
+                       name="sElse">Someone Else</input>
+
+        </div>
+        <br>
+
+        <div class="vCheck">
+            <label>
+                3. Are you fully vaccinated (you are considered fully vaccinated 2 weeks after your second dose)? <br>
+            </label>
+            <label for="fullyVaccinated">
+                <input type="radio"
+                       id="Vax"
+                       name="fVax">Yes</input>
+            </label>
+            <label for="notVaccinated">
+                <input type="radio"
+                       id="notVax"
+                       name="nVax">No</input>
+            </label>
+        </div>
+        <br>
+
+        <div class="age_class">
+            <label for="yearsOld" id="yOld">
+                4. What is your age?
+            </label>
+
+            <select name="age" id="age">
+                <option value="lTeen">12-15</option>
+                <option value="teen">16-17</option>
+                <option value="yAdult">18-29</option>
+                <option value="thirties">30-39</option>
+                <option value="forties">40-49</option>
+                <option value="fifties">50-59</option>
+                <option value="sixties">60-69</option>
+                <option value="seventies">70-79</option>
+                <option value="old">80+</option>
+            </select>
+        </div>
+        <br>
+
+        <div class="gender">
+            <label for="gender" id="label-gender">
+               5. What gender do you identify as?
+            </label>
+
+            <select name="gender" id="gender">
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+            <option value="transgender">Transgender</option>
+            <option value="noPreference"> I'd rather not specify</option>
+
+        </select>
+        </div>
+        <br>
+
+        <div class="race">
+            <label> 6. What is your race?
+                    <small>(Check all that apply)</small> <br>
+                </label>
+            <label for="race-1">
+                    <input type="checkbox"
+                        id="race" name="race">Caucasian</input></label> <br>
+            <label for="race-2">
+                    <input type="checkbox"
+                        id="race" name="race"> African American</input></label> <br>
+            <label for="race-3">
+                    <input type="checkbox"
+                        id="race" name="race">American Indian or Alaska Native</input></label> <br>
+            <label for="race-4">
+                    <input type="checkbox"
+                        id="race" name="race">Asian</input></label> <br>
+            <label for="race-5">
+                    <input type="checkbox"
+                        id="race"  name="race">Native Hawaiian or Other Pacific Islander</input></label> <br>
+            <label for="race-6">
+                    <input type="checkbox"
+                        id="race"   name="race">I prefer not to say </input></label> <br>
+
+        </div>
+        <br>
+
+
+        <div class="cSymptoms">
+            <label>7. Are you currently experiencing any of the following symptoms?
+                    <small>(Check all that apply)</small> <br>
+                </label>
+
+            <label for="symp-1">
+                    <input type="checkbox"
+                        id="sym" name="sym"> Trouble breathing </input></label> <br>
+            <label for="symp-2">
+                    <input type="checkbox"
+                        id="sym" name="sym"> Persistent paint or pain in the chest </input></label> <br>
+            <label for="symp-3">
+                    <input type="checkbox"
+                        id="sym" name="sym">New confusion</input></label> <br>
+            <label for="symp-4">
+                    <input type="checkbox"
+                        id="sym" name="sym">Inability to wake or stay awake</input></label> <br>
+            <label for="symp-5">
+                    <input type="checkbox"
+                           id="sym"name="sym">Pale, gray, or blue-colored skin, lips, or nail beds, depending on skin tone</input></label> <br>
+
+        </div>
+        <br>
+
+        <div class="contact">
+            <label>
+                    8. In the last two weeks, have you been in close contact with someone who has tested positive for Covid-19? <br>
+                </label>
+            <label for="positive">
+                    <input type="radio"
+                           id="positive"
+                           name="positiveC">Yes</input>
+                </label>
+            <label for="negative">
+                    <input type="radio"
+                           id="negative"
+                           name="negativeC">No</input>
+                </label>
+            <label for="tbd">
+                    <input type="radio"
+                           id="tbd"
+                           name="notSureC">I don't know</input>
+                </label>
+        </div>
+        <br>
+
+        <div class="contact_tracing">
+            <label for="cTracing" id="cTracingx">
+                9. In the last two weeks have you gotten tested?
+            </label>
+
+            <select name="tracing" id="tracing">
+            <option value="yesP"> I have been tested in the last 10 days and the results were positive </option>
+            <option value="yesN">I have been tested in the last 10 days and the results were negative</option>
+            <option value="yesW">I have been tested in the last 10 days and am stilling results waiting for the results</option>
+            <option value="noT"> I have not been tested</option>
+
+        </select>
+        </div>
+        <br>
+
+        <div class="cSymptoms">
+            <label> 10. Are you currently experiencing any of the following symptoms?
+                        <small>(Check all that apply)</small> <br>
+                    </label>
+            <label for="symp-1">
+                        <input type="checkbox"
+                               name="sym"> Trouble breathing </input></label><br>
+            <label for="symp-2">
+                        <input type="checkbox"
+                               name="sym"> Persistent paint or pain in the chest </input></label><br>
+            <label for="symp-3">
+                        <input type="checkbox"
+                               name="sym">New confusion</input></label><br>
+            <label for="symp-4">
+                        <input type="checkbox"
+                               name="sym">Inability to wake or stay awake</input></label><br>
+            <label for="symp-5">
+                        <input type="checkbox"
+                               name="sym">Pale, gray, or blue-colored skin, lips, or nail beds, depending on skin tone</input></label><br>
+        </div>
+        <br>
+
+        <div class="cSymptoms">
+            <label> 11. In the last ten days have you experienced any of the following ?
+                        <small>(Check all that apply)</small> <br>
+                    </label>
+            <label for="symp-1">
+                        <input type="checkbox"
+                               name="sym"> Fever or feeling feverish (such as chills or sweating) </input></label><br>
+            <label for="symp-2">
+                        <input type="checkbox"
+                               name="sym"> Cough </input></label><br>
+            <label for="symp-3">
+                        <input type="checkbox"
+                               name="sym">Mild of moderate difficulty breathing</input></label><br>
+            <label for="symp-4">
+                        <input type="checkbox"
+                               name="sym">Sore Throat</input></label><br>
+            <label for="symp-5">
+                        <input type="checkbox"
+                               name="sym">Aches</input></label><br>
+            <label for="symp-6">
+                            <input type="checkbox"
+                                name="sym">Unusual fatigue</input></label><br>
+            <label for="symp-7">
+                            <input type="checkbox"
+                                name="sym">Headache</input></label><br>
+            <label for="symp-8">
+                            <input type="checkbox"
+                                name="sym">New loss of taste or smell</input></label><br>
+            <label for="symp-9">
+                            <input type="checkbox"
+                                name="sym">Congestion or runny nose</input></label><br>
+            <label for="symp-10">
+                            <input type="checkbox"
+                                name="sym">Nauesa or vomitting</input></label><br>
+        </div>
+        <br>
+
+        <div class="additionalC">
+            <label for="other">
+                Any other notes or comments you would like to add? <br>
+            </label>
+            <textarea rows="4" cols="50" name="comment" id="comment" placeholder="Enter comments or concerns here">
+            </textarea>
+        </div>
+        <button type="submit" value="submit"> Submit </button>
+    </form>
+    <br>
+
+    <a href="/">
+        <button id="back_button">Return to Home</button>
+    </a>
+
+</body>
+
+</html>
